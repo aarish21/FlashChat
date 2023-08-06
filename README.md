@@ -1,6 +1,6 @@
 Flashchat
 App Screenshot
-<img src="/App screenshots" alt="Image Description" height="200">
+<img src="/Flash-Chat/App%20screenshots" alt="Image Description" height="200">
 
 Description
 Flashchat is an iOS app that allows users to have one-to-one chat conversations using Firebase as the backend. Users can exchange text messages and also send fun and animated GIF images using the GIPHY SDK.
