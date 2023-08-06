@@ -8,13 +8,18 @@
 
 import UIKit
 import Firebase
+import GiphyUISDK
 
-class ChatViewController: UIViewController {
+
+class ChatViewController: UIViewController, UITextFieldDelegate {
+    let giphy = GiphyViewController()
     
     let db = Firestore.firestore()
-    
+    var network = GifNetwork()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var gifBtn: UIButton!
     
     var message: [Message] = []
     
@@ -26,7 +31,9 @@ class ChatViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         loadMessages()
+        setup()
         
+        Giphy.configure(apiKey: "ZjCBYH43uBTHSG737txfGu9S1XdPfUjn")
     }
     
     func loadMessages(){
@@ -86,6 +93,23 @@ class ChatViewController: UIViewController {
         
     }
     
+    @IBAction func gifBtnAction(_ sender: Any) {
+        present(giphy, animated: true, completion: nil)
+    }
+    func searchGifs(for searchText: String) {
+          network.fetchGifs(searchTerm: searchText)
+      }
+    
+    
+    func setup() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+//        searchBar.searchTextField.delegate = self
+//            searchBar.searchTextField.placeholder = "Whats your favorite gif?"
+//            searchBar.returnKeyType = .search
+    }
+    
 }
 
 extension ChatViewController: UITableViewDataSource{
@@ -116,6 +140,7 @@ extension ChatViewController: UITableViewDataSource{
         
         return cell
     }
+
     
     
 }
@@ -124,4 +149,13 @@ extension ChatViewController: UITableViewDataSource{
 
 extension ChatViewController: UITableViewDelegate{
     
+}
+extension ChatViewController: UISearchTextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        if textField.text != nil {
+            print(textField.text!)
+        }
+        return true
+    }
 }

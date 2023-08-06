@@ -18,6 +18,16 @@ class RegisterViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let e = error{
                 print(e.localizedDescription)
+                DispatchQueue.main.async {
+                    K.showAlert(title: e.localizedDescription, message: "")
+                }
+               
+
+
+
+
+
+
             }else{
                 self.performSegue(withIdentifier: K.registerSegue, sender: self)
             }

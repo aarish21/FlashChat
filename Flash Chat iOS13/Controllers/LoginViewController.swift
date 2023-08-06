@@ -20,6 +20,9 @@ class LoginViewController: UIViewController {
           guard let self = self else { return }
             if let e = error{
                 print(e.localizedDescription)
+                DispatchQueue.main.async {
+                    K.showAlert(title: e.localizedDescription, message: "")
+                }
             }else{
                 self.performSegue(withIdentifier: K.loginSegue, sender: self)
             }

@@ -22,6 +22,14 @@
 		6F1A741D265C07EA000C535B /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A741B265C07EA000C535B /* MessageCell.swift */; };
 		6F1A741E265C07EA000C535B /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A741C265C07EA000C535B /* MessageCell.xib */; };
 		6F2EAF142659AF25003FC1E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F2EAF132659AF25003FC1E9 /* GoogleService-Info.plist */; };
+		6F58C91D2A7FEAD40003297E /* giphy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F58C9182A7FEACD0003297E /* giphy.png */; };
+		6F58C91E2A7FEAD40003297E /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F58C9192A7FEACF0003297E /* chat.png */; };
+		6F58C91F2A7FEAD40003297E /* register.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F58C91A2A7FEAD00003297E /* register.png */; };
+		6F58C9202A7FEAD40003297E /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F58C91B2A7FEAD20003297E /* main.png */; };
+		6F58C9212A7FEAD40003297E /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F58C91C2A7FEAD40003297E /* login.png */; };
+		6F8348B026E3BDFC005CE3A9 /* GifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8348AF26E3BDFC005CE3A9 /* GifNetwork.swift */; };
+		6F8348B326E3C493005CE3A9 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8348B226E3C493005CE3A9 /* GifCell.swift */; };
+		6FD9657E28919E6100BEEA58 /* CLTypingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9657D28919E6100BEEA58 /* CLTypingLabel.swift */; };
 		6FEA4D5E266148720061FC41 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6FEA4D5D266148720061FC41 /* IQKeyboardManagerSwift */; };
 		E6B10DFD25A3B698BA742654 /* Pods_Flash_Chat_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315D9A7B9EC12AE24AC8D179 /* Pods_Flash_Chat_iOS13.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +53,14 @@
 		6F1A741B265C07EA000C535B /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		6F1A741C265C07EA000C535B /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		6F2EAF132659AF25003FC1E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6F58C9182A7FEACD0003297E /* giphy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giphy.png; sourceTree = "<group>"; };
+		6F58C9192A7FEACF0003297E /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		6F58C91A2A7FEAD00003297E /* register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register.png; sourceTree = "<group>"; };
+		6F58C91B2A7FEAD20003297E /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		6F58C91C2A7FEAD40003297E /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		6F8348AF26E3BDFC005CE3A9 /* GifNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifNetwork.swift; sourceTree = "<group>"; };
+		6F8348B226E3C493005CE3A9 /* GifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
+		6FD9657D28919E6100BEEA58 /* CLTypingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTypingLabel.swift; sourceTree = "<group>"; };
 		B3A1B3B5776BAD638871C14C /* Pods-Flash Chat iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS13.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS13/Pods-Flash Chat iOS13.release.xcconfig"; sourceTree = "<group>"; };
 		FEFC53421F8C04D2F21DA821 /* Pods-Flash Chat iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS13.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS13/Pods-Flash Chat iOS13.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +81,9 @@
 		0B62816A235DEE8100E35CAF = {
 			isa = PBXGroup;
 			children = (
+				6FD9657D28919E6100BEEA58 /* CLTypingLabel.swift */,
 				6F1A73C3265AB3A1000C535B /* Constants.swift */,
+				6F58C9172A7FEA900003297E /* App screenshots */,
 				0B62819D235F0F4D00E35CAF /* README.md */,
 				0B628175235DEE8100E35CAF /* Flash Chat iOS13 */,
 				0B628174235DEE8100E35CAF /* Products */,
@@ -132,8 +150,22 @@
 			isa = PBXGroup;
 			children = (
 				6F1A7402265BF31A000C535B /* Message.swift */,
+				6F8348AF26E3BDFC005CE3A9 /* GifNetwork.swift */,
+				6F8348B226E3C493005CE3A9 /* GifCell.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6F58C9172A7FEA900003297E /* App screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				6F58C9192A7FEACF0003297E /* chat.png */,
+				6F58C9182A7FEACD0003297E /* giphy.png */,
+				6F58C91C2A7FEAD40003297E /* login.png */,
+				6F58C91B2A7FEAD20003297E /* main.png */,
+				6F58C91A2A7FEAD00003297E /* register.png */,
+			);
+			path = "App screenshots";
 			sourceTree = "<group>";
 		};
 		EA5E8E173B017F28C5BF3A2D /* Frameworks */ = {
@@ -213,8 +245,13 @@
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
 				6F1A741E265C07EA000C535B /* MessageCell.xib in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
+				6F58C91E2A7FEAD40003297E /* chat.png in Resources */,
 				6F2EAF142659AF25003FC1E9 /* GoogleService-Info.plist in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
+				6F58C9212A7FEAD40003297E /* login.png in Resources */,
+				6F58C9202A7FEAD40003297E /* main.png in Resources */,
+				6F58C91D2A7FEAD40003297E /* giphy.png in Resources */,
+				6F58C91F2A7FEAD40003297E /* register.png in Resources */,
 				0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD9657E28919E6100BEEA58 /* CLTypingLabel.swift in Sources */,
 				0B62818B235DF00000E35CAF /* WelcomeViewController.swift in Sources */,
+				6F8348B326E3C493005CE3A9 /* GifCell.swift in Sources */,
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
@@ -277,6 +316,7 @@
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
 				6F1A741D265C07EA000C535B /* MessageCell.swift in Sources */,
+				6F8348B026E3BDFC005CE3A9 /* GifNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = Q3BWML7R33;
 				INFOPLIST_FILE = "Flash Chat iOS13/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = Q3BWML7R33;
 				INFOPLIST_FILE = "Flash Chat iOS13/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
