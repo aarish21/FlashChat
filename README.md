@@ -33,7 +33,7 @@ User Authentication: Securely sign in and register using Firebase Authentication
 ## Installation
 Clone the repository:
 bash
-`git clone https://github.com/aarish21/Flashchat.git`
+```git clone https://github.com/aarish21/Flashchat.git```
 
 **Open the Xcode project.**
 
@@ -65,13 +65,12 @@ Sign up for a GIPHY API key at https://developers.giphy.com/.
 
 Add the GIPHY SDK and API key to your project via CocoaPods:
 
-`pod 'GiphyUISDK' `
+```pod 'GiphyUISDK' ```
 Initialize the GIPHY SDK with your API key in the app delegate or wherever appropriate:
-swift
-Copy code
-`import GiphyUISDK`
 
-`Giphy.configure(apiKey: "YOUR_GIPHY_API_KEY")`
+```import GiphyUISDK```
+
+```Giphy.configure(apiKey: "YOUR_GIPHY_API_KEY")```
 
 Dependencies
 Firebase/Core
